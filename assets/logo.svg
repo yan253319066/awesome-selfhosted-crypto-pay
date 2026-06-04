@@ -16,13 +16,6 @@
       <stop offset="0%" stop-color="#1e293b" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <!-- Background rounded rect -->
@@ -44,11 +37,11 @@
   <polygon points="200,145 225,159 225,191 200,205 175,191 175,159"
            fill="none" stroke="url(#accent2)" stroke-width="1" stroke-linejoin="round" opacity="0.4"/>
 
-  <!-- Bitcoin/Crypto symbol inside hexagon - simplified abstract star -->
+  <!-- Central crypto orb -->
   <circle cx="200" cy="175" r="12" fill="none" stroke="url(#accent1)" stroke-width="3"/>
   <circle cx="200" cy="175" r="4" fill="url(#accent1)"/>
 
-  <!-- Three dots motif (blockchain blocks) -->
+  <!-- Three blockchain block dots -->
   <rect x="188" y="230" width="8" height="8" rx="2" fill="#10b981" opacity="0.8"/>
   <rect x="200" y="230" width="8" height="8" rx="2" fill="#06b6d4" opacity="0.8"/>
   <rect x="212" y="230" width="8" height="8" rx="2" fill="#10b981" opacity="0.8"/>
@@ -59,20 +52,17 @@
 
   <!-- Network connection rays from shield -->
   <g stroke="url(#accent1)" stroke-width="1.5" opacity="0.4">
-    <!-- Left -->
     <line x1="80" y1="200" x2="120" y2="200"/>
     <circle cx="72" cy="200" r="3" fill="#10b981" opacity="0.5"/>
-    <!-- Right -->
     <line x1="280" y1="200" x2="320" y2="200"/>
     <circle cx="328" cy="200" r="3" fill="#06b6d4" opacity="0.5"/>
-    <!-- Top -->
     <line x1="200" y1="60" x2="200" y2="90"/>
     <circle cx="200" cy="52" r="3" fill="#10b981" opacity="0.5"/>
   </g>
 
-  <!-- Bottom decorative line -->
-  <line x1="145" y1="275" x2="255" y2="275" stroke="url(#accent2)" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
-
-  <!-- Small checkmark nod to "awesome" -->
-  <path d="M145 275 L152 282 L162 272" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <!-- Centered star badge -->
+  <g transform="translate(200,278)">
+    <polygon points="0,-14 4,-5 13,-5 6,1 8,11 0,6 -8,11 -6,1 -13,-5 -4,-5"
+             fill="none" stroke="url(#accent2)" stroke-width="2" stroke-linejoin="round" opacity="0.6"/>
+  </g>
 </svg>
