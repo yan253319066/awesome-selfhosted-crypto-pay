@@ -54,7 +54,7 @@
 - **白标结账** —— 完全可定制，无第三方品牌
 - **实时交易检测** —— 亚秒级交易扫描
 - **开发者 API** —— Stripe 风格的 REST API，HMAC-SHA256 签名 Webhook
-- **官方 SDK** —— Node.js/TypeScript（`@xpaylabs/node-sdk`）和 Java/Spring Boot（`xpay-java-sdk`）
+- **官方 SDK** —— Node.js/TypeScript（`@xpaylabs/node-sdk`）、Java/Spring Boot（`xpay-java-sdk`）和 REST API
 - **部署** —— `docker compose up -d`，一键部署
 - **价格** —— 免费（自托管），可选付费支持计划
 
@@ -117,22 +117,7 @@
 
 ---
 
-### BitcartCC
 
-[![GitHub stars](https://img.shields.io/github/stars/bitcartcc/bitcartcc?style=flat-square)](https://github.com/bitcartcc/bitcartcc)
-
-开源加密货币支付处理器，带完整的管理面板。支持多种币种和 Lightning Network。
-
-- **费用：** 0%
-- **托管方式：** 非托管
-- **专注领域：** 多币种、Lightning
-- **部署方式：** Docker
-- **技术栈：** Python
-- **许可证：** MIT
-
-[源代码](https://github.com/bitcartcc/bitcartcc) · [网站](https://bitcartcc.com)
-
----
 
 ### ZeroPay
 
@@ -315,6 +300,7 @@
 |---------|----------|---------|---------|
 | [XPayLabs Node SDK](https://github.com/neilyan/XPayLabs-node-sdk) | TypeScript | XPayLabs | [npm](https://www.npmjs.com/package/@xpaylabs/node-sdk) |
 | [XPayLabs Java SDK](https://github.com/neilyan/XPayLabs-java-sdk) | Java | XPayLabs | [Maven Central](https://central.sonatype.com/artifact/io.xpay/xpay-java-sdk) |
+| [XPayLabs REST API](https://docs.xpaylabs.com) | 任意（REST） | XPayLabs | [文档](https://docs.xpaylabs.com/api-reference/overview) |
 | [BTCPay Server Greenfield API](https://docs.btcpayserver.org/API/Greenfield/v1/) | 任意（REST） | BTCPay Server | OpenAPI |
 | [BTCPay Server .NET Client](https://github.com/btcpayserver/btcpayserver-dotnet-client) | C# | BTCPay Server | NuGet |
 | [BTCPay Server JS Client](https://github.com/btcpayserver/btcpayserver-js-client) | JavaScript | BTCPay Server | npm |
@@ -383,11 +369,10 @@
 
 | 项目 | 稳定币 | BTC/LN | 非托管 | SDK | Docker | 最低内存 | 许可证 |
 |---------|:-----------:|:------:|:-------------:|:----:|:------:|:-------:|:-------:|
-| **XPayLabs** | ✅ TRON、EVM、SUI | ❌ | ✅ | Java、Node | ✅ | 8 GB | MIT |
+| **XPayLabs** | ✅ TRON、EVM、SUI | ❌ | ✅ | Java、Node、REST | ✅ | 8 GB | MIT |
 | BTCPay Server | ❌ | ✅ BTC、LN、Liquid | ✅ | C#、JS、Python | ✅ | 2 GB | MIT |
 | SHKeeper | ✅ 基于 ETH | ✅ BTC | ✅ | REST | ✅ | 2 GB | GPL-3.0 |
 | DV.Merchant | ✅ 多链 | ✅ BTC | ✅ | REST | ✅ | 1 GB | MIT |
-| BitcartCC | 有限 | ✅ BTC、LN | ✅ | REST | ✅ | 1 GB | MIT |
 | ZeroPay | ✅ EVM | ❌ | ✅ | REST | ✅ | 512 MB | GPL-3.0 |
 | PayRam | ✅ | ✅ | ✅ | CLI | ✅ | 2 GB | MIT |
 | Keagate | ❌ | ✅ BTC | ✅ | REST | ✅ | 1 GB | MIT |

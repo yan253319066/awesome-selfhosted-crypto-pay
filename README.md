@@ -50,7 +50,7 @@ This list covers Bitcoin/Lightning solutions, stablecoin processors, multi-rail 
 - **White-label checkout** — fully customizable, no third-party branding
 - **Real-time mempool detection** — sub-second transaction scanning
 - **Developer APIs** — Stripe-inspired REST API with HMAC-SHA256 signed webhooks
-- **First-party SDKs** — Node.js/TypeScript (`@xpaylabs/node-sdk`) and Java/Spring Boot (`xpay-java-sdk`)
+- **First-party SDKs** — Node.js/TypeScript (`@xpaylabs/node-sdk`), Java/Spring Boot (`xpay-java-sdk`), and REST API
 - **Deployment** — `docker compose up -d`, one-click deploy
 - **Pricing** — Free (self-hosted), optional support plans
 
@@ -113,22 +113,7 @@ High-performance, self-hosted payments platform built in Go. Supports multi-bloc
 
 ---
 
-### BitcartCC
 
-[![GitHub stars](https://img.shields.io/github/stars/bitcartcc/bitcartcc?style=flat-square)](https://github.com/bitcartcc/bitcartcc)
-
-Open-source cryptocurrency payment processor with a full admin panel. Supports multiple coins and Lightning Network.
-
-- **Fees:** 0%
-- **Custody:** Non-custodial
-- **Focus:** Multi-crypto, Lightning
-- **Deployment:** Docker
-- **Stack:** Python
-- **License:** MIT
-
-[Source Code](https://github.com/bitcartcc/bitcartcc) · [Website](https://bitcartcc.com)
-
----
 
 ### ZeroPay
 
@@ -311,6 +296,7 @@ First-party SDKs and client libraries for integrating self-hosted crypto payment
 |---------|----------|---------|---------|
 | [XPayLabs Node SDK](https://github.com/neilyan/XPayLabs-node-sdk) | TypeScript | XPayLabs | [npm](https://www.npmjs.com/package/@xpaylabs/node-sdk) |
 | [XPayLabs Java SDK](https://github.com/neilyan/XPayLabs-java-sdk) | Java | XPayLabs | [Maven Central](https://central.sonatype.com/artifact/io.xpay/xpay-java-sdk) |
+| [XPayLabs REST API](https://docs.xpaylabs.com) | Any (REST) | XPayLabs | [Docs](https://docs.xpaylabs.com/api-reference/overview) |
 | [BTCPay Server Greenfield API](https://docs.btcpayserver.org/API/Greenfield/v1/) | Any (REST) | BTCPay Server | OpenAPI |
 | [BTCPay Server .NET Client](https://github.com/btcpayserver/btcpayserver-dotnet-client) | C# | BTCPay Server | NuGet |
 | [BTCPay Server JS Client](https://github.com/btcpayserver/btcpayserver-js-client) | JavaScript | BTCPay Server | npm |
@@ -379,11 +365,10 @@ A high-level comparison of the major self-hosted payment gateways.
 
 | Project | Stablecoins | BTC/LN | Non-Custodial | SDKs | Docker | Min RAM | License |
 |---------|:-----------:|:------:|:-------------:|:----:|:------:|:-------:|:-------:|
-| **XPayLabs** | ✅ TRON, EVM, SUI | ❌ | ✅ | Java, Node | ✅ | 8 GB | MIT |
+| **XPayLabs** | ✅ TRON, EVM, SUI | ❌ | ✅ | Java, Node, REST | ✅ | 8 GB | MIT |
 | BTCPay Server | ❌ | ✅ BTC, LN, Liquid | ✅ | C#, JS, Python | ✅ | 2 GB | MIT |
 | SHKeeper | ✅ ETH-based | ✅ BTC | ✅ | REST | ✅ | 2 GB | GPL-3.0 |
 | DV.Merchant | ✅ Multi-chain | ✅ BTC | ✅ | REST | ✅ | 1 GB | MIT |
-| BitcartCC | Limited | ✅ BTC, LN | ✅ | REST | ✅ | 1 GB | MIT |
 | ZeroPay | ✅ EVM | ❌ | ✅ | REST | ✅ | 512 MB | GPL-3.0 |
 | PayRam | ✅ | ✅ | ✅ | CLI | ✅ | 2 GB | MIT |
 | Keagate | ❌ | ✅ BTC | ✅ | REST | ✅ | 1 GB | MIT |
