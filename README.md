@@ -38,22 +38,23 @@ This list covers Bitcoin/Lightning solutions, stablecoin processors, multi-rail 
 
 ### XPayLabs
 
-[![GitHub stars](https://img.shields.io/github/stars/neilyan/XPayLabs-java?style=flat-square)](https://github.com/neilyan/XPayLabs-java)
-[![GitHub license](https://img.shields.io/github/license/neilyan/XPayLabs-java?style=flat-square)](https://github.com/neilyan/XPayLabs-java/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/yan253319066/XPayLabs-docker?style=flat-square)](https://github.com/yan253319066/XPayLabs-docker)
+[![GitHub license](https://img.shields.io/github/license/yan253319066/XPayLabs-docker?style=flat-square)](https://github.com/yan253319066/XPayLabs-docker/blob/main/LICENSE)
 
-**XPayLabs** — Zero-fee, self-hosted, non-custodial stablecoin payment gateway. Accept USDT, USDC, DAI, and BUSD on TRON (TRC-20), EVM chains (Ethereum, BSC, Polygon, Arbitrum, Optimism, Base, Avalanche), and SUI.
+**XPayLabs (xpay)** — Self-hosted crypto payment infrastructure. Zero gateway fees. Non-custodial stablecoin payment gateway supporting TRON (TRC-20), EVM chains (Ethereum, BSC, Polygon, Arbitrum, Optimism, Base, Avalanche), and SUI. Now supports **x402 Agent-to-Agent payment protocol** for AI agents and autonomous systems.
 
-- **Zero fees** — no per-transaction charges, only blockchain gas (~$0.01 TRON)
+- **Zero fees** — 0% gateway fees, only blockchain gas (TRON ~$0.01)
 - **Non-custodial** — private keys generated and stored in your Docker containers
-- **White-label checkout** — fully customizable Vue 3 payment page, no third-party branding
-- **Real-time mempool detection** — 1–6 second transaction confirmation
+- **Multi-chain** — TRON, Ethereum, BSC, Polygon, Arbitrum, Optimism, Base, Avalanche, SUI
+- **x402 Protocol** — Agent-to-Agent payments for AI agents
+- **White-label checkout** — fully customizable, no third-party branding
+- **Real-time mempool detection** — sub-second transaction scanning
+- **Developer APIs** — Stripe-inspired REST API with HMAC-SHA256 signed webhooks
 - **First-party SDKs** — Node.js/TypeScript (`@xpaylabs/node-sdk`) and Java/Spring Boot (`xpay-java-sdk`)
-- **HMAC-SHA256 webhooks** with exponential backoff retry
-- **Merchant dashboard** — Vue 3 admin panel with ECharts analytics
-- **Deployment** — `docker compose up -d`, Kubernetes-ready
-- **Pricing** — Free (MIT), optional support plans from $1,500
+- **Deployment** — `docker compose up -d`, one-click deploy
+- **Pricing** — Free (self-hosted), optional support plans
 
-[Source Code](https://github.com/neilyan/XPayLabs-java) · [Website](https://xpaylabs.com) · [Docs](https://docs.xpaylabs.com) · [Demo](https://github.com/neilyan/XPayLabs-demo-vue) · [Node SDK](https://github.com/neilyan/XPayLabs-node-sdk) · [Java SDK](https://github.com/neilyan/XPayLabs-java-sdk)
+[Source Code](https://github.com/yan253319066/XPayLabs-docker) · [Website](https://xpaylabs.com) · [Docs](https://docs.xpaylabs.com) · [Demo](https://github.com/neilyan/XPayLabs-demo-vue) · [Node SDK](https://github.com/neilyan/XPayLabs-node-sdk) · [Java SDK](https://github.com/neilyan/XPayLabs-java-sdk)
 
 ---
 
@@ -366,7 +367,7 @@ Supplementary tools for self-hosted crypto payment operations.
 ### Communities
 
 - [BTCPay Server Community Chat](https://chat.btcpayserver.org)
-- [XPayLabs GitHub Discussions](https://github.com/neilyan/XPayLabs-java/discussions)
+- [XPayLabs GitHub Discussions](https://github.com/yan253319066/XPayLabs-docker/discussions)
 - [r/BitcoinMerchants](https://reddit.com/r/BitcoinMerchants)
 - [Awesome Self-Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
 

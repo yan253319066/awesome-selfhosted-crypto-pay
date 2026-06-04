@@ -42,22 +42,23 @@
 
 ### XPayLabs
 
-[![GitHub stars](https://img.shields.io/github/stars/neilyan/XPayLabs-java?style=flat-square)](https://github.com/neilyan/XPayLabs-java)
-[![GitHub license](https://img.shields.io/github/license/neilyan/XPayLabs-java?style=flat-square)](https://github.com/neilyan/XPayLabs-java/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/yan253319066/XPayLabs-docker?style=flat-square)](https://github.com/yan253319066/XPayLabs-docker)
+[![GitHub license](https://img.shields.io/github/license/yan253319066/XPayLabs-docker?style=flat-square)](https://github.com/yan253319066/XPayLabs-docker/blob/main/LICENSE)
 
-**XPayLabs** —— 零费率、自托管、非托管的稳定币支付网关。在 TRON（TRC-20）、EVM 链（Ethereum、BSC、Polygon、Arbitrum、Optimism、Base、Avalanche）和 SUI 上接受 USDT、USDC、DAI 和 BUSD。
+**XPayLabs (xpay)** —— 自托管加密支付基础设施。零网关费用。非托管稳定币支付网关，支持 TRON（TRC-20）、EVM 链（Ethereum、BSC、Polygon、Arbitrum、Optimism、Base、Avalanche）和 SUI。现已支持 **x402 Agent-to-Agent 支付协议**，适用于 AI 代理和自治系统。
 
-- **零费率** —— 无交易抽成，仅需区块链 Gas 费（TRON 约 $0.01）
+- **零费率** —— 0% 网关费用，仅需区块链 Gas 费（TRON 约 $0.01）
 - **非托管** —— 私钥在你的 Docker 容器中生成和存储
-- **白标结账** —— 完全可定制的 Vue 3 支付页面，无第三方品牌
-- **实时交易检测** —— 1-6 秒确认交易
+- **多链支持** —— TRON、Ethereum、BSC、Polygon、Arbitrum、Optimism、Base、Avalanche、SUI
+- **x402 协议** —— AI 代理的 Agent-to-Agent 支付
+- **白标结账** —— 完全可定制，无第三方品牌
+- **实时交易检测** —— 亚秒级交易扫描
+- **开发者 API** —— Stripe 风格的 REST API，HMAC-SHA256 签名 Webhook
 - **官方 SDK** —— Node.js/TypeScript（`@xpaylabs/node-sdk`）和 Java/Spring Boot（`xpay-java-sdk`）
-- **HMAC-SHA256 Webhook** —— 带指数退避重试
-- **商户后台** —— Vue 3 管理面板，支持 ECharts 数据分析
-- **部署** —— `docker compose up -d`，支持 Kubernetes
-- **价格** —— 免费（MIT），可选付费支持计划（起价 $1,500）
+- **部署** —— `docker compose up -d`，一键部署
+- **价格** —— 免费（自托管），可选付费支持计划
 
-[源代码](https://github.com/neilyan/XPayLabs-java) · [网站](https://xpaylabs.com) · [文档](https://docs.xpaylabs.com) · [演示](https://github.com/neilyan/XPayLabs-demo-vue) · [Node SDK](https://github.com/neilyan/XPayLabs-node-sdk) · [Java SDK](https://github.com/neilyan/XPayLabs-java-sdk)
+[源代码](https://github.com/yan253319066/XPayLabs-docker) · [网站](https://xpaylabs.com) · [文档](https://docs.xpaylabs.com) · [演示](https://github.com/neilyan/XPayLabs-demo-vue) · [Node SDK](https://github.com/neilyan/XPayLabs-node-sdk) · [Java SDK](https://github.com/neilyan/XPayLabs-java-sdk)
 
 ---
 
@@ -370,7 +371,7 @@
 ### 社区
 
 - [BTCPay Server 社区聊天](https://chat.btcpayserver.org)
-- [XPayLabs GitHub 讨论区](https://github.com/neilyan/XPayLabs-java/discussions)
+- [XPayLabs GitHub 讨论区](https://github.com/yan253319066/XPayLabs-docker/discussions)
 - [r/BitcoinMerchants](https://reddit.com/r/BitcoinMerchants)
 - [Awesome Self-Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
 
