@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/neilyan/awesome-selfhosted-crypto-pay/main/assets/logo.svg" width="200" alt="Awesome Self-Hosted Crypto Pay">
+  <img src="https://raw.githubusercontent.com/yan253319066/awesome-selfhosted-crypto-pay/main/assets/logo.svg" width="200" alt="Awesome Self-Hosted Crypto Pay">
 </p>
 
 <h1 align="center">Awesome Self-Hosted Crypto Pay <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a></h1>
@@ -274,7 +274,7 @@ Solutions focused specifically on Bitcoin and Lightning Network payment processi
 |---------|-------------|:---------:|-------|:-------:|
 | [LNBits](https://github.com/lnbits/lnbits) | Lightning wallet and accounts system with extensions | ✅ Yes | Python | MIT |
 | [LNURL Daemon](https://github.com/nbd-wtf/lnurl-daemon) | LNURL-pay and LNURL-withdraw daemon | ✅ Yes | Go | MIT |
-| [LnMe](https://github.com/lnme/lnme) | Simple self-hosted Lightning payment page | ✅ Yes | Node.js | MIT |
+| [LnMe](https://github.com/bumi/lnme) | Simple self-hosted Lightning payment page | ✅ Yes | Node.js | MIT |
 | [CypherpunkPay](https://github.com/CypherpunkPay/CypherpunkPay) | Privacy-focused self-hosted Bitcoin processor | ✅ Yes | C# | MIT |
 
 ---
@@ -299,7 +299,7 @@ Middleware and orchestration layers that connect multiple payment rails behind a
 | Project | Description | Rails | Stack | License |
 |---------|-------------|-------|-------|:-------:|
 | [Sovereign Payment Kernel](https://github.com/MEF-works/payment-kernel) | OS for payments — routes to best available rail | Bitcoin, Lightning, Cash App, Venmo, Zelle | TypeScript | MIT |
-| [toll-booth](https://github.com/willpaul/toll-booth) | HTTP 402 payment middleware for Node.js | Lightning, Cashu, stablecoins | Node.js | MIT |
+| [toll-booth](https://github.com/forgesworn/toll-booth) | Payment-rail agnostic L402 middleware for APIs. Lightning, Cashu, x402 | Lightning, Cashu, stablecoins | TypeScript | MIT |
 
 ---
 

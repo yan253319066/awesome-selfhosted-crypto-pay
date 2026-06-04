@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/neilyan/awesome-selfhosted-crypto-pay/main/assets/logo.svg" width="200" alt="Awesome Self-Hosted Crypto Pay">
+  <img src="https://raw.githubusercontent.com/yan253319066/awesome-selfhosted-crypto-pay/main/assets/logo.svg" width="200" alt="Awesome Self-Hosted Crypto Pay">
 </p>
 
 <h1 align="center">Awesome Self-Hosted Crypto Pay <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a></h1>
@@ -278,7 +278,7 @@
 |---------|-------------|:---------:|-------|:-------:|
 | [LNBits](https://github.com/lnbits/lnbits) | 带扩展功能的 Lightning 钱包和账户系统 | ✅ 是 | Python | MIT |
 | [LNURL Daemon](https://github.com/nbd-wtf/lnurl-daemon) | LNURL-pay 和 LNURL-withdraw 守护进程 | ✅ 是 | Go | MIT |
-| [LnMe](https://github.com/lnme/lnme) | 简单的自托管 Lightning 支付页面 | ✅ 是 | Node.js | MIT |
+| [LnMe](https://github.com/bumi/lnme) | 简单的自托管 Lightning 支付页面 | ✅ 是 | Node.js | MIT |
 | [CypherpunkPay](https://github.com/CypherpunkPay/CypherpunkPay) | 注重隐私的自托管 Bitcoin 处理器 | ✅ 是 | C# | MIT |
 
 ---
@@ -303,7 +303,7 @@
 | 项目 | 描述 | 支持的支付轨道 | 技术栈 | 许可证 |
 |---------|-------------|-------|-------|:-------:|
 | [Sovereign Payment Kernel](https://github.com/MEF-works/payment-kernel) | 支付操作系统 —— 路由到最优可用轨道 | Bitcoin、Lightning、Cash App、Venmo、Zelle | TypeScript | MIT |
-| [toll-booth](https://github.com/willpaul/toll-booth) | Node.js 的 HTTP 402 支付中间件 | Lightning、Cashu、稳定币 | Node.js | MIT |
+| [toll-booth](https://github.com/forgesworn/toll-booth) | 支付轨道无关的 L402 API 中间件。Lightning、Cashu、x402 | Lightning、Cashu、稳定币 | TypeScript | MIT |
 
 ---
 
