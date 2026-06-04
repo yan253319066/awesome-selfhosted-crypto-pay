@@ -3,7 +3,11 @@
   <img src="https://raw.githubusercontent.com/neilyan/awesome-selfhosted-crypto-pay/main/assets/logo.svg" width="200" alt="Awesome Self-Hosted Crypto Pay">
 </p>
 
-# Awesome Self-Hosted Crypto Pay [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<h1 align="center">Awesome Self-Hosted Crypto Pay <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a></h1>
+
+<p align="center">
+  <strong>English</strong> | <a href="README.zh.md">中文</a>
+</p>
 
 > A curated list of **self-hosted cryptocurrency payment gateways, processors, and infrastructure** — open-source software you run on your own servers to accept crypto payments without third-party fees or custody.
 
