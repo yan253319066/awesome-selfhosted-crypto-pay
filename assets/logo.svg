@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa"/>
+      <stop offset="100%" style="stop-color:#00b4d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="60" fill="url(#bg)"/>
+  <!-- Shield shape -->
+  <path d="M200 60 L320 120 L320 200 Q320 300 200 340 Q80 300 80 200 L80 120 Z"
+        fill="none" stroke="url(#accent)" stroke-width="8" stroke-linejoin="round"/>
+  <!-- Dollar/currency symbol -->
+  <text x="200" y="230" text-anchor="middle" dominant-baseline="middle"
+        font-family="system-ui, sans-serif" font-weight="800" font-size="120"
+        fill="url(#accent)">$</text>
+  <!-- Lock icon inside shield -->
+  <path d="M200 170 L200 190 M185 190 L215 190 Q220 190 220 195 L220 210 Q220 215 215 215 L185 215 Q180 215 180 210 L180 195 Q180 190 185 190 Z"
+        fill="none" stroke="url(#accent)" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Server/node dots -->
+  <circle cx="170" cy="290" r="6" fill="#00d4aa" opacity="0.7"/>
+  <circle cx="200" cy="300" r="6" fill="#00b4d8" opacity="0.7"/>
+  <circle cx="230" cy="290" r="6" fill="#00d4aa" opacity="0.7"/>
+</svg>
