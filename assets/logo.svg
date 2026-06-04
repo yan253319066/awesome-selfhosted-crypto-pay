@@ -1,28 +1,78 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a1a2e"/>
-      <stop offset="100%" stop-color="#16213e"/>
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00d4aa"/>
-      <stop offset="100%" stop-color="#00b4d8"/>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
     </linearGradient>
+    <linearGradient id="accent2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="shieldFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <rect width="400" height="400" rx="60" fill="url(#bg)"/>
-  <!-- Shield -->
-  <path d="M200 70 L310 125 L310 200 Q310 290 200 330 Q90 290 90 200 L90 125 Z" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linejoin="round"/>
-  <!-- Dollar sign -->
-  <path d="M215 155 L215 165 C228 167 240 178 240 192 C240 207 228 218 215 220 L215 230 C215 233 213 235 210 235 L210 248 C220 248 230 250 238 254 L233 266 C224 262 214 260 205 260 L205 235 L195 235 L195 260 C186 260 176 262 167 266 L162 254 C170 250 180 248 190 248 L190 235 C177 233 165 222 165 207 C165 193 177 182 190 180 L190 170 C190 167 192 165 195 165 L195 152 C185 152 175 150 167 146 L172 134 C180 138 190 140 200 140 L200 165 L210 165 L210 152 C220 152 230 150 238 146 L243 158 C235 162 225 164 215 165 Z M210 180 C204 180 200 184 200 190 C200 196 204 200 210 200 L210 180 Z M195 220 L195 200 C189 200 185 204 185 210 C185 216 189 220 195 220 Z" fill="url(#accent)"/>
-  <!-- Lock body -->
-  <rect x="178" y="270" width="44" height="34" rx="5" fill="none" stroke="url(#accent)" stroke-width="4"/>
-  <!-- Lock shackle -->
-  <path d="M190 270 L190 255 Q190 240 200 240 Q210 240 210 255 L210 270" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
-  <!-- Keyhole -->
-  <circle cx="200" cy="285" r="4" fill="url(#accent)"/>
-  <rect x="197" y="285" width="6" height="8" rx="1" fill="url(#accent)"/>
-  <!-- Node dots -->
-  <circle cx="170" cy="340" r="5" fill="#00d4aa" opacity="0.5"/>
-  <circle cx="200" cy="348" r="5" fill="#00b4d8" opacity="0.5"/>
-  <circle cx="230" cy="340" r="5" fill="#00d4aa" opacity="0.5"/>
+
+  <!-- Background rounded rect -->
+  <rect width="400" height="400" rx="56" fill="url(#bg)"/>
+
+  <!-- Shield outline -->
+  <path d="M200 60 L320 116 L320 212 Q320 302 200 348 Q80 302 80 212 L80 116 Z"
+        fill="url(#shieldFill)" stroke="url(#accent1)" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- Shield inner highlight line -->
+  <path d="M200 76 L304 125 L304 212 Q304 292 200 334 Q96 292 96 212 L96 125 Z"
+        fill="none" stroke="url(#accent2)" stroke-width="1.5" stroke-linejoin="round" opacity="0.3"/>
+
+  <!-- Central hexagon (blockchain/crypto motif) -->
+  <polygon points="200,135 235,155 235,195 200,215 165,195 165,155"
+           fill="none" stroke="url(#accent1)" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Hexagon inner glow -->
+  <polygon points="200,145 225,159 225,191 200,205 175,191 175,159"
+           fill="none" stroke="url(#accent2)" stroke-width="1" stroke-linejoin="round" opacity="0.4"/>
+
+  <!-- Bitcoin/Crypto symbol inside hexagon - simplified abstract star -->
+  <circle cx="200" cy="175" r="12" fill="none" stroke="url(#accent1)" stroke-width="3"/>
+  <circle cx="200" cy="175" r="4" fill="url(#accent1)"/>
+
+  <!-- Three dots motif (blockchain blocks) -->
+  <rect x="188" y="230" width="8" height="8" rx="2" fill="#10b981" opacity="0.8"/>
+  <rect x="200" y="230" width="8" height="8" rx="2" fill="#06b6d4" opacity="0.8"/>
+  <rect x="212" y="230" width="8" height="8" rx="2" fill="#10b981" opacity="0.8"/>
+
+  <!-- Connecting line between dots -->
+  <line x1="196" y1="234" x2="200" y2="234" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
+  <line x1="208" y1="234" x2="212" y2="234" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Network connection rays from shield -->
+  <g stroke="url(#accent1)" stroke-width="1.5" opacity="0.4">
+    <!-- Left -->
+    <line x1="80" y1="200" x2="120" y2="200"/>
+    <circle cx="72" cy="200" r="3" fill="#10b981" opacity="0.5"/>
+    <!-- Right -->
+    <line x1="280" y1="200" x2="320" y2="200"/>
+    <circle cx="328" cy="200" r="3" fill="#06b6d4" opacity="0.5"/>
+    <!-- Top -->
+    <line x1="200" y1="60" x2="200" y2="90"/>
+    <circle cx="200" cy="52" r="3" fill="#10b981" opacity="0.5"/>
+  </g>
+
+  <!-- Bottom decorative line -->
+  <line x1="145" y1="275" x2="255" y2="275" stroke="url(#accent2)" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Small checkmark nod to "awesome" -->
+  <path d="M145 275 L152 282 L162 272" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
 </svg>
