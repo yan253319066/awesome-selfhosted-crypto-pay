@@ -18,22 +18,21 @@
     </linearGradient>
   </defs>
 
-  <!-- Background rounded rect -->
   <rect width="400" height="400" rx="56" fill="url(#bg)"/>
 
-  <!-- Shield outline -->
+  <!-- Shield -->
   <path d="M200 60 L320 116 L320 212 Q320 302 200 348 Q80 302 80 212 L80 116 Z"
         fill="url(#shieldFill)" stroke="url(#accent1)" stroke-width="5" stroke-linejoin="round"/>
 
-  <!-- Shield inner highlight line -->
+  <!-- Shield inner line -->
   <path d="M200 76 L304 125 L304 212 Q304 292 200 334 Q96 292 96 212 L96 125 Z"
         fill="none" stroke="url(#accent2)" stroke-width="1.5" stroke-linejoin="round" opacity="0.3"/>
 
-  <!-- Central hexagon (blockchain/crypto motif) -->
+  <!-- Hexagon -->
   <polygon points="200,135 235,155 235,195 200,215 165,195 165,155"
            fill="none" stroke="url(#accent1)" stroke-width="4" stroke-linejoin="round"/>
 
-  <!-- Hexagon inner glow -->
+  <!-- Hexagon inner -->
   <polygon points="200,145 225,159 225,191 200,205 175,191 175,159"
            fill="none" stroke="url(#accent2)" stroke-width="1" stroke-linejoin="round" opacity="0.4"/>
 
@@ -41,16 +40,16 @@
   <circle cx="200" cy="175" r="12" fill="none" stroke="url(#accent1)" stroke-width="3"/>
   <circle cx="200" cy="175" r="4" fill="url(#accent1)"/>
 
-  <!-- Three blockchain block dots -->
-  <rect x="188" y="230" width="8" height="8" rx="2" fill="#10b981" opacity="0.8"/>
-  <rect x="200" y="230" width="8" height="8" rx="2" fill="#06b6d4" opacity="0.8"/>
-  <rect x="212" y="230" width="8" height="8" rx="2" fill="#10b981" opacity="0.8"/>
+  <!-- Three blockchain blocks - properly centered at x=200 -->
+  <rect x="184" y="230" width="8" height="8" rx="2" fill="#10b981" opacity="0.8"/>
+  <rect x="196" y="230" width="8" height="8" rx="2" fill="#06b6d4" opacity="0.8"/>
+  <rect x="208" y="230" width="8" height="8" rx="2" fill="#10b981" opacity="0.8"/>
 
-  <!-- Connecting line between dots -->
-  <line x1="196" y1="234" x2="200" y2="234" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
-  <line x1="208" y1="234" x2="212" y2="234" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
+  <!-- Connecting lines between blocks -->
+  <line x1="192" y1="234" x2="196" y2="234" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
+  <line x1="204" y1="234" x2="208" y2="234" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
 
-  <!-- Network connection rays from shield -->
+  <!-- Network rays -->
   <g stroke="url(#accent1)" stroke-width="1.5" opacity="0.4">
     <line x1="80" y1="200" x2="120" y2="200"/>
     <circle cx="72" cy="200" r="3" fill="#10b981" opacity="0.5"/>
