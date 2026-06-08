@@ -295,7 +295,7 @@ First-party SDKs and client libraries for integrating self-hosted crypto payment
 | Project | Language | Gateway | Package |
 |---------|----------|---------|---------|
 | [XPayLabs Node SDK](https://github.com/neilyan/XPayLabs-node-sdk) | TypeScript | XPayLabs | [npm](https://www.npmjs.com/package/@xpaylabs/node-sdk) |
-| [XPayLabs Java SDK](https://github.com/neilyan/XPayLabs-java-sdk) | Java | XPayLabs | [Maven Central](https://central.sonatype.com/artifact/io.xpay/xpay-java-sdk) |
+| [XPayLabs Java SDK](https://github.com/neilyan/XPayLabs-java-sdk) | Java | XPayLabs | [Maven Central](https://central.sonatype.com/artifact/com.xpaylabs/xpay-java-sdk) |
 | [XPayLabs REST API](https://docs.xpaylabs.com) | Any (REST) | XPayLabs | [Docs](https://docs.xpaylabs.com/api-reference/overview) |
 | [BTCPay Server Greenfield API](https://docs.btcpayserver.org/API/Greenfield/v1/) | Any (REST) | BTCPay Server | OpenAPI |
 | [BTCPay Server .NET Client](https://github.com/btcpayserver/btcpayserver-dotnet-client) | C# | BTCPay Server | NuGet |
