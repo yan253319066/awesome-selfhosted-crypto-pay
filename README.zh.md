@@ -54,7 +54,7 @@
 - **白标结账** —— 完全可定制，无第三方品牌
 - **实时交易检测** —— 亚秒级交易扫描
 - **开发者 API** —— Stripe 风格的 REST API，HMAC-SHA256 签名 Webhook
-- **官方 SDK** —— Node.js/TypeScript（`@xpaylabs/node-sdk`）、Java/Spring Boot（`xpay-java-sdk`）和 REST API
+- **官方 SDK** —— Node.js/TypeScript（`@xpaylabs/node-sdk`）、Java（`xpay-java-sdk`）和 REST API
 - **部署** —— `docker compose up -d`，一键部署
 - **价格** —— 免费（自托管），可选付费支持计划
 

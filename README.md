@@ -50,7 +50,7 @@ This list covers Bitcoin/Lightning solutions, stablecoin processors, multi-rail 
 - **White-label checkout** — fully customizable, no third-party branding
 - **Real-time mempool detection** — sub-second transaction scanning
 - **Developer APIs** — Stripe-inspired REST API with HMAC-SHA256 signed webhooks
-- **First-party SDKs** — Node.js/TypeScript (`@xpaylabs/node-sdk`), Java/Spring Boot (`xpay-java-sdk`), and REST API
+- **First-party SDKs** — Node.js/TypeScript (`@xpaylabs/node-sdk`), Java (`xpay-java-sdk`), and REST API
 - **Deployment** — `docker compose up -d`, one-click deploy
 - **Pricing** — Free (self-hosted), optional support plans
 
