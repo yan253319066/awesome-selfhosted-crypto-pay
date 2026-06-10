@@ -50,6 +50,7 @@
 - **零费率** —— 0% 网关费用，仅需区块链 Gas 费（TRON 约 $0.01）
 - **非托管** —— 私钥在你的 Docker 容器中生成和存储
 - **多链支持** —— TRON、Ethereum、BSC、Polygon、Arbitrum、Optimism、Base、Avalanche、SUI
+- **多商家** —— 一个部署可入驻无限商家，每个商家独立 API 凭证和费率结构
 - **x402 协议** —— AI 代理的 Agent-to-Agent 支付
 - **白标结账** —— 完全可定制，无第三方品牌
 - **实时交易检测** —— 亚秒级交易扫描

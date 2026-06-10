@@ -46,6 +46,7 @@ This list covers Bitcoin/Lightning solutions, stablecoin processors, multi-rail 
 - **Zero fees** — 0% gateway fees, only blockchain gas (TRON ~$0.01)
 - **Non-custodial** — private keys generated and stored in your Docker containers
 - **Multi-chain** — TRON, Ethereum, BSC, Polygon, Arbitrum, Optimism, Base, Avalanche, SUI
+- **Multi-tenant** — host unlimited merchants on a single deployment, each with isolated credentials and fee structure
 - **x402 Protocol** — Agent-to-Agent payments for AI agents
 - **White-label checkout** — fully customizable, no third-party branding
 - **Real-time mempool detection** — sub-second transaction scanning
