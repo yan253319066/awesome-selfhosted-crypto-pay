@@ -235,6 +235,26 @@ Lightweight, privacy-focused self-hosted Bitcoin payment processor. Supports on-
 
 ---
 
+
+### SSHPay
+
+[![Website](https://img.shields.io/badge/website-sshpay.com-blue?style=flat-square)](https://sshpay.com)
+
+A commercially-enhanced fork of BTPay — self-hosted multi-currency crypto payment gateway SaaS. Adds commission system, merchant tiers (free/pro), open registration, and storefront payment links. Supports 9 chains including Solana USDC. Python/Flask, JSON persistence, 256 MB RAM, MIT license.
+
+- **Fees:** 0% transaction fee; platform commission 1% (free) / 0.5% (pro $19/mo)
+- **Custody:** Non-custodial
+- **Focus:** Multi-tenant SaaS with built-in monetization
+- **Deployment:** pip install + gunicorn + nginx
+- **Stack:** Python, Flask
+- **License:** MIT
+
+**Key additions over BTPay:** Merchant self-registration, tiered pricing, commission tracking, brand customization, Swagger UI docs, Python + Node.js SDKs, webhook signing.
+
+[Website](https://sshpay.com) · [API Docs](https://sshpay.com/docs) · [Quick Start](https://sshpay.com/start) · [Blog](https://sshpay.com/blog/comparison)
+
+> Built on [BTPay](https://github.com/btpay-org/btpay). BTPay provides the core engine; SSHPay adds the SaaS layer.
+
 ### Sovereign Payment Kernel
 
 [![GitHub stars](https://img.shields.io/github/stars/MEF-works/payment-kernel?style=flat-square)](https://github.com/MEF-works/payment-kernel)
@@ -275,6 +295,7 @@ Solutions with first-class support for USDT, USDC, and other stablecoins.
 | **ZeroPay** | EVM chains | USDT, USDC | Non-custodial | 0% |
 | **BTPay** | Ethereum, Arbitrum, Base, Polygon, Optimism, Avalanche, TRON, Solana | USDC, USDT, DAI, PYUSD | Non-custodial | 0% |
 | **CryptoPayServer** | Multiple chains | USDT, USDC | Non-custodial | 0% |
+| **SSHPay** | Ethereum, Arbitrum, Base, Polygon, Optimism, Avalanche, TRON, Solana + Bitcoin | USDC, USDT, DAI, PYUSD, SOL, BTC | Non-custodial | 0% |
 
 ---
 
@@ -306,6 +327,9 @@ First-party SDKs and client libraries for integrating self-hosted crypto payment
 
 ---
 
+| [SSHPay Python SDK](https://sshpay.com/static/sdk/sshpay.py) | Python | SSHPay | [Download](https://sshpay.com/static/sdk/sshpay.py) |
+| [SSHPay Node.js SDK](https://sshpay.com/static/sdk/sshpay.js) | JavaScript | SSHPay | [Download](https://sshpay.com/static/sdk/sshpay.js) |
+| [SSHPay OpenAPI](https://sshpay.com/docs) | Any (REST) | SSHPay | [Swagger](https://sshpay.com/docs) |
 ## Plugins & CMS Integrations
 
 Plugins that connect self-hosted gateways to popular e-commerce platforms and CMSs.
@@ -338,6 +362,7 @@ Supplementary tools for self-hosted crypto payment operations.
 ### Articles
 
 - [Self-Hosted Crypto Payment Gateways: The Complete Guide](https://xpaylabs.com/blog/self-hosted-crypto-payment-gateways-guide)
+- [SSHPay vs BTCPay Server vs NOWPayments — Full Comparison](https://sshpay.com/blog/comparison)
 - [BTCPay Server vs XPayLabs: Choosing the Right Self-Hosted Payment Processor](https://xpaylabs.com/blog/btcpayserver-vs-xpaylabs)
 - [How to Deploy a Self-Hosted Payment Gateway with Docker](https://xpaylabs.com/blog/deploy-self-hosted-payment-gateway-docker)
 - [Accept Stablecoin Payments Without Third-Party Fees](https://xpaylabs.com/blog/accept-stablecoin-payments-no-fees)
@@ -376,6 +401,7 @@ A high-level comparison of the major self-hosted payment gateways.
 | SatSale | ❌ | ✅ BTC, LN | ✅ | REST | ✅ | 256 MB | MIT |
 | ArxMint | ❌ | ✅ BTC, LN, ecash | ✅ | REST | ✅ | 4 GB | MIT |
 | BTPay | ✅ 8 chains | ✅ BTC via xpub | ✅ | REST | ❌ | 256 MB | MIT |
+| **SSHPay** | ✅ 9 chains + Solana | ✅ BTC via xpub | ✅ | Python, Node, REST | ❌ (pip) | 256 MB | MIT |
 | Sovereign Kernel | ❌ | ✅ BTC, LN | ✅ | REST | ✅ | 1 GB | MIT |
 
 ---
