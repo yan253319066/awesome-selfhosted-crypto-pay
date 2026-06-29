@@ -43,10 +43,10 @@ This list covers Bitcoin/Lightning solutions, stablecoin processors, multi-rail 
 
 **XPayLabs (xpay)** — Self-hosted crypto payment infrastructure. Zero gateway fees. Non-custodial stablecoin payment gateway supporting TRON (TRC-20), EVM chains (Ethereum, BSC, Polygon, Arbitrum, Optimism, Base, Avalanche), and SUI. Now supports **x402 Agent-to-Agent payment protocol** for AI agents and autonomous systems.
 
+- **Multi-merchant (PayFac-ready)** — the only self-hosted gateway with native multi-merchant architecture. Onboard unlimited merchants on a single deployment, each with isolated credentials, addresses, webhooks, and fee structures. Run your own payment facilitator business — competitors are single-merchant only
 - **Zero fees** — 0% gateway fees, only blockchain gas (TRON ~$0.01)
 - **Non-custodial** — private keys generated and stored in your Docker containers
 - **Multi-chain** — TRON, Ethereum, BSC, Polygon, Arbitrum, Optimism, Base, Avalanche, SUI
-- **Multi-tenant** — host unlimited merchants on a single deployment, each with isolated credentials and fee structure
 - **x402 Protocol** — Agent-to-Agent payments for AI agents
 - **White-label checkout** — fully customizable, no third-party branding
 - **Real-time mempool detection** — sub-second transaction scanning
@@ -364,19 +364,19 @@ Supplementary tools for self-hosted crypto payment operations.
 
 A high-level comparison of the major self-hosted payment gateways.
 
-| Project | Stablecoins | BTC/LN | Non-Custodial | SDKs | Docker | Min RAM | License |
-|---------|:-----------:|:------:|:-------------:|:----:|:------:|:-------:|:-------:|
-| **XPayLabs** | ✅ TRON, EVM, SUI | ❌ | ✅ | Java, Node, REST | ✅ | 8 GB | MIT |
-| BTCPay Server | ❌ | ✅ BTC, LN, Liquid | ✅ | C#, JS, Python | ✅ | 2 GB | MIT |
-| SHKeeper | ✅ ETH-based | ✅ BTC | ✅ | REST | ✅ | 2 GB | GPL-3.0 |
-| DV.Merchant | ✅ Multi-chain | ✅ BTC | ✅ | REST | ✅ | 1 GB | MIT |
-| ZeroPay | ✅ EVM | ❌ | ✅ | REST | ✅ | 512 MB | GPL-3.0 |
-| PayRam | ✅ | ✅ | ✅ | CLI | ✅ | 2 GB | MIT |
-| Keagate | ❌ | ✅ BTC | ✅ | REST | ✅ | 1 GB | MIT |
-| SatSale | ❌ | ✅ BTC, LN | ✅ | REST | ✅ | 256 MB | MIT |
-| ArxMint | ❌ | ✅ BTC, LN, ecash | ✅ | REST | ✅ | 4 GB | MIT |
-| BTPay | ✅ 8 chains | ✅ BTC via xpub | ✅ | REST | ❌ | 256 MB | MIT |
-| Sovereign Kernel | ❌ | ✅ BTC, LN | ✅ | REST | ✅ | 1 GB | MIT |
+| Project | Stablecoins | BTC/LN | Multi-Merchant | Non-Custodial | SDKs | Docker | Min RAM | License |
+|---------|:-----------:|:------:|:--------------:|:-------------:|:----:|:------:|:-------:|:-------:|
+| **XPayLabs** | ✅ TRON, EVM, SUI | ❌ | ✅ Native PayFac | ✅ | Java, Node, REST | ✅ | 8 GB | MIT |
+| BTCPay Server | ❌ | ✅ BTC, LN, Liquid | ❌ Single-merchant | ✅ | C#, JS, Python | ✅ | 2 GB | MIT |
+| SHKeeper | ✅ ETH-based | ✅ BTC | ❌ Single-merchant | ✅ | REST | ✅ | 2 GB | GPL-3.0 |
+| DV.Merchant | ✅ Multi-chain | ✅ BTC | ❌ Single-merchant | ✅ | REST | ✅ | 1 GB | MIT |
+| ZeroPay | ✅ EVM | ❌ | ❌ Single-merchant | ✅ | REST | ✅ | 512 MB | GPL-3.0 |
+| PayRam | ✅ | ✅ | ❌ Single-merchant | ✅ | CLI | ✅ | 2 GB | MIT |
+| Keagate | ❌ | ✅ BTC | ❌ Single-merchant | ✅ | REST | ✅ | 1 GB | MIT |
+| SatSale | ❌ | ✅ BTC, LN | ❌ Single-merchant | ✅ | REST | ✅ | 256 MB | MIT |
+| ArxMint | ❌ | ✅ BTC, LN, ecash | ❌ Single-merchant | ✅ | REST | ✅ | 4 GB | MIT |
+| BTPay | ✅ 8 chains | ✅ BTC via xpub | ❌ Single-merchant | ✅ | REST | ❌ | 256 MB | MIT |
+| Sovereign Kernel | ❌ | ✅ BTC, LN | ❌ Single-merchant | ✅ | REST | ✅ | 1 GB | MIT |
 
 ---
 

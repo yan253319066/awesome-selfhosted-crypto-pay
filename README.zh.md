@@ -47,10 +47,10 @@
 
 **XPayLabs (xpay)** —— 自托管加密支付基础设施。零网关费用。非托管稳定币支付网关，支持 TRON（TRC-20）、EVM 链（Ethereum、BSC、Polygon、Arbitrum、Optimism、Base、Avalanche）和 SUI。现已支持 **x402 Agent-to-Agent 支付协议**，适用于 AI 代理和自治系统。
 
+- **多商家（PayFac 就绪）** —— 唯一的原生多商家自托管网关。一个部署可入驻无限商家，每个商家拥有独立的 API 凭证、收款地址、Webhook 和费率结构。运营你自己的支付服务商平台——竞品均只支持单商户
 - **零费率** —— 0% 网关费用，仅需区块链 Gas 费（TRON 约 $0.01）
 - **非托管** —— 私钥在你的 Docker 容器中生成和存储
 - **多链支持** —— TRON、Ethereum、BSC、Polygon、Arbitrum、Optimism、Base、Avalanche、SUI
-- **多商家** —— 一个部署可入驻无限商家，每个商家独立 API 凭证和费率结构
 - **x402 协议** —— AI 代理的 Agent-to-Agent 支付
 - **白标结账** —— 完全可定制，无第三方品牌
 - **实时交易检测** —— 亚秒级交易扫描
@@ -368,19 +368,19 @@
 
 主要自托管支付网关的高级对比。
 
-| 项目 | 稳定币 | BTC/LN | 非托管 | SDK | Docker | 最低内存 | 许可证 |
-|---------|:-----------:|:------:|:-------------:|:----:|:------:|:-------:|:-------:|
-| **XPayLabs** | ✅ TRON、EVM、SUI | ❌ | ✅ | Java、Node、REST | ✅ | 8 GB | MIT |
-| BTCPay Server | ❌ | ✅ BTC、LN、Liquid | ✅ | C#、JS、Python | ✅ | 2 GB | MIT |
-| SHKeeper | ✅ 基于 ETH | ✅ BTC | ✅ | REST | ✅ | 2 GB | GPL-3.0 |
-| DV.Merchant | ✅ 多链 | ✅ BTC | ✅ | REST | ✅ | 1 GB | MIT |
-| ZeroPay | ✅ EVM | ❌ | ✅ | REST | ✅ | 512 MB | GPL-3.0 |
-| PayRam | ✅ | ✅ | ✅ | CLI | ✅ | 2 GB | MIT |
-| Keagate | ❌ | ✅ BTC | ✅ | REST | ✅ | 1 GB | MIT |
-| SatSale | ❌ | ✅ BTC、LN | ✅ | REST | ✅ | 256 MB | MIT |
-| ArxMint | ❌ | ✅ BTC、LN、ecash | ✅ | REST | ✅ | 4 GB | MIT |
-| BTPay | ✅ 8 条链 | ✅ BTC via xpub | ✅ | REST | ❌ | 256 MB | MIT |
-| Sovereign Kernel | ❌ | ✅ BTC、LN | ✅ | REST | ✅ | 1 GB | MIT |
+| 项目 | 稳定币 | BTC/LN | 多商家 | 非托管 | SDK | Docker | 最低内存 | 许可证 |
+|---------|:-----------:|:------:|:--------------:|:-------------:|:----:|:------:|:-------:|:-------:|
+| **XPayLabs** | ✅ TRON、EVM、SUI | ❌ | ✅ 原生 PayFac | ✅ | Java、Node、REST | ✅ | 8 GB | MIT |
+| BTCPay Server | ❌ | ✅ BTC、LN、Liquid | ❌ 单商户 | ✅ | C#、JS、Python | ✅ | 2 GB | MIT |
+| SHKeeper | ✅ 基于 ETH | ✅ BTC | ❌ 单商户 | ✅ | REST | ✅ | 2 GB | GPL-3.0 |
+| DV.Merchant | ✅ 多链 | ✅ BTC | ❌ 单商户 | ✅ | REST | ✅ | 1 GB | MIT |
+| ZeroPay | ✅ EVM | ❌ | ❌ 单商户 | ✅ | REST | ✅ | 512 MB | GPL-3.0 |
+| PayRam | ✅ | ✅ | ❌ 单商户 | ✅ | CLI | ✅ | 2 GB | MIT |
+| Keagate | ❌ | ✅ BTC | ❌ 单商户 | ✅ | REST | ✅ | 1 GB | MIT |
+| SatSale | ❌ | ✅ BTC、LN | ❌ 单商户 | ✅ | REST | ✅ | 256 MB | MIT |
+| ArxMint | ❌ | ✅ BTC、LN、ecash | ❌ 单商户 | ✅ | REST | ✅ | 4 GB | MIT |
+| BTPay | ✅ 8 条链 | ✅ BTC via xpub | ❌ 单商户 | ✅ | REST | ❌ | 256 MB | MIT |
+| Sovereign Kernel | ❌ | ✅ BTC、LN | ❌ 单商户 | ✅ | REST | ✅ | 1 GB | MIT |
 
 ---
 
